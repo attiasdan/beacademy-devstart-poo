@@ -1,0 +1,9 @@
+<?php
+
+declare(strict_types=1);
+
+class Produto
+{
+    public string $nome;
+    public float $valor;
+}
