@@ -1,6 +1,13 @@
 <?php
 
 include 'Produto.php';
+include 'Categoria.php';
+
+$c1 = new Categoria('Roupas', 'Roupas Unissex');
+$c2 = new Categoria('Roupas de Banho', 'Toalhas, toalhas pra rosto, etc');
+
+var_dump($c1);
+var_dump($c2);
 
 $p1 = new Produto('Tenis', 299);
 // $p1->setNome('Tenis para corrida');
