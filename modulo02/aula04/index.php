@@ -3,6 +3,7 @@
 include 'Usuario.php';
 include 'Cliente.php';
 include 'Gestor.php';
+include 'GestorGeral.php';
 
 $c1 = new Cliente('chiquim@email.com', '12345');
 $c1->setNome('Chiquim');
