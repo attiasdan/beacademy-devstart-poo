@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class Usuario
+abstract class Usuario
 {
     private string $nome;
     private string $email;
@@ -10,9 +10,11 @@ class Usuario
     private string $cpf;
 
     public function __construct(string $email, string $senha) {
-        $this->$email = $email;
+        $this->email = $email;
         $this->senha = $senha;
     }
+    
+///////////////////////////////////////////////////////
     public function setNome(string $nome): void
     {
         $this->nome = $nome;
@@ -20,5 +22,32 @@ class Usuario
     public function getNome(): string
     {
         return $this->nome;
+    }
+///////////////////////////////////////////////////////
+    public function setEmail(string $email): void
+    {
+        $this->email = $email;
+    }
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+///////////////////////////////////////////////////////
+    public function setSenha(string $senha): void
+    {
+        $this->senha = $senha;
+    }
+    public function getSenha(): string
+    {
+        return $this->senha;
+    }
+///////////////////////////////////////////////////////
+    public function setCpf(string $cpf): void
+    {
+        $this->cpf = $cpf;
+    }
+    public function getCpf(): string
+    {
+        return $this->cpf;
     }
 }
