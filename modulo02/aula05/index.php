@@ -4,17 +4,10 @@ include 'Usuario.php';
 include 'Cliente.php';
 include 'Gestor.php';
 include 'GestorGeral.php';
-include 'Validar.php';
 
 $c1 = new Cliente('chiquim@email.com', '12345');
 $c1->setNome('Chiquim');
 $c1->setDataCadastro('01/01/2001');
-
-$cpf = "123456789";
-// $validador = new Validar();
-// $validador->validarCpf($cpf);
-Validar::validarCpf($cpf);
-$c1->setCpf($cpf);
 
 $g1 = new Gestor('zezim@email.com', '123123', 10000.50);
 $g1->setNome('Zezim');
