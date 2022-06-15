@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel Attias",
+            "email": "danielattias@live.com"
+        }
+    ],
+    "require": {}
+}
