@@ -1,0 +1,16 @@
+{
+    "name": "danie/composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Danie\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel Attias",
+            "email": "danielattias@live.com"
+        }
+    ],
+    "require": {}
+}
