@@ -4,11 +4,15 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-class IndexController
+class IndexController extends AbstractController
 {
-    public function __construction() {} //optional
     public function indexAction(): void
     {
-        echo "Olá mundo, estou dentro de uma action, dentro do controller";
+        parent::render('index/index');
+    }
+
+    public function loginAction(): void
+    {
+        parent::render('index/login');
     }
 }
