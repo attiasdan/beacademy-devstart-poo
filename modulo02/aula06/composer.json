@@ -10,5 +10,7 @@
             "email": "danielattias@live.com"
         }
     ],
-    "require": {}
+    "require": {
+        "dompdf/dompdf": "^1.2"
+    }
 }
